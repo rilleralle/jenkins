@@ -2,7 +2,7 @@ node {
     stage('Build') {
         echo 'Building....'
         sh """
-        curl -X POST -H 'Content-type: application/json' --data '{\\"text\\":\\"test\\"}' https://hooks.slack.com/services/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
+        curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"test\"}' https://hooks.slack.com/services/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
         """
     }
     stage('Test') {
